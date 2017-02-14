@@ -27,7 +27,7 @@ and open the template in the editor.
       <div data-role="page" id="msg">
          <div id="mn" class="ui-content">
             <h1 id="hd"></h1>
-            <p id="mg">test</p>
+            <p id="mg">Happy Valentine !!</p>
             <h2 id="ft"></h2>
          </div>
       </div>
@@ -38,7 +38,7 @@ and open the template in the editor.
             $('#main').click(function(){
                $.get('https://jsonservamt.000webhostapp.com',"msgg=1",function (dt){
                   msg = dt;
-                  var res = Math.floor((Math.random()*dt.length)+1);
+                  var res = Math.floor((Math.random()*dt.length));
                   $('#mg').text(msg[res][1]);
                },'JSON');});
                $.get('https://jsonservamt.000webhostapp.com',"gname=Nosisa",function (dt){
